@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Designing Digitally</title>
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+<body onload="renderSlide3()">
+<div class="main">
+    <div class="menu">
+        <img class="menu-item" src="../resources/Graphics/Interface/LMSTest_Menu_Intro.png">
+        <img class="menu-item" src="../resources/Graphics/Interface/LMSTest_Menu_Cake.png">
+        <img class="menu-item active" src="../resources/Graphics/Interface/LMSTest_Menu_Cute.png">
+        <img class="menu-item" src="../resources/Graphics/Interface/LMSTest_Menu_RoadTrip.png">
+        <img class="menu-item" src="../resources/Graphics/Interface/LMSTest_Menu_Congrats.png">
+    </div>
+    <div class="slide-content">
+        <div id="slide_2">
+            <div class="header">
+                <div class="title">
+                    Which of these does not belong?
+                </div>
+            </div>
+
+            <div style="width: 110%;">
+                <label class="radio-image">
+                    <input type="radio" name="slide3ques" value="cat" />
+                    <img class="img-butn" src="../resources/Graphics/Slide%20Contents/Cat.png"
+                         onmouseover="this.src='../resources/Graphics/Slide%20Contents/Cat_Over.png'"
+                         onmouseout="this.src='../resources/Graphics/Slide%20Contents/Cat.png'">
+                </label>
+                <label class="radio-image">
+                    <input type="radio" name="slide3ques" value="plant" />
+                    <img class="img-butn" src="../resources/Graphics/Slide%20Contents/Plant.png"
+                     onmouseover="this.src='../resources/Graphics/Slide%20Contents/Plant_Over.png'"
+                     onmouseout="this.src='../resources/Graphics/Slide%20Contents/Plant.png'">
+                </label>
+                <label class="radio-image">
+                    <input type="radio" name="slide3ques" value="dog" />
+                    <img class="img-butn" src="../resources/Graphics/Slide%20Contents/Dog.png"
+                     onmouseover="this.src='../resources/Graphics/Slide%20Contents/Dog_Over.png'"
+                     onmouseout="this.src='../resources/Graphics/Slide%20Contents/Dog.png'">
+                </label>
+            </div>
+
+            <div>
+                <img class="next-btn" src="../resources/Graphics/Interface/LMSTest_Submit_up.png"
+                     onmouseover="this.src='../resources/Graphics/Interface/LMSTest_Submit_over.png'"
+                     onmouseout ="this.src='../resources/Graphics/Interface/LMSTest_Submit_up.png'"
+                     onclick="submitSlide3()">
+            </div>
+
+        </div>
+    </div>
+    <div id="correctAns" style="display: none" class="dialog">
+        <img src="../resources/Graphics/Interface/LMSTest_CorrectBox.png">
+
+        <div class="dialog-content">
+            <div class="message">
+                Correct, plants are not in the animal kingdom. 25 Points.
+            </div>
+            <div class="button">
+                <img src="../resources/Graphics/Interface/LMSTest_Continue_up.png"
+                     onmouseover="this.src='../resources/Graphics/Interface/LMSTest_Continue_over.png'"
+                     onmouseout="this.src='../resources/Graphics/Interface/LMSTest_Continue_up.png'"
+                     onclick="document.location='slide_4.html'">
+
+            </div>
+        </div>
+    </div>
+    <div id="wrongAns" style="display:none" class="dialog">
+        <img src="../resources/Graphics/Interface/LMSTest_IncorrectBox.png">
+
+        <div class="dialog-content">
+            <div class="message">
+                Not quite, you're looking for something that sprouts from the ground.
+            </div>
+            <div class="button">
+                <img src="../resources/Graphics/Interface/LMSTest_Continue_up.png"
+                     onmouseover="this.src='../resources/Graphics/Interface/LMSTest_Continue_over.png'"
+                     onmouseout="this.src='../resources/Graphics/Interface/LMSTest_Continue_up.png'"
+                     onclick="document.location='slide_4.html'">
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

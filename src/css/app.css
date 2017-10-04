@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-image: url('../resources/Graphics/Interface/LMSTestInterface_BG.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.63);
+}
+
+.image-centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+
+.slide-content {
+    width: 620px;
+    height: 430px;
+    position: absolute;
+    top: 105px;
+    left: 180px;
+}
+
+.menu {
+    margin-top: 178px;
+}
+.menu > .menu-item {
+    display: block;
+    margin-bottom: 6px;
+    visibility: hidden;
+}
+
+.menu > .menu-item.active {
+    visibility: visible;
+}
+
+#slide_1 {
+    background-image: url('../resources/Graphics/Interface/LMSTest_TextBox.png');
+    width: 100%;
+    height: 100%;
+    background-repeat: round;
+}
+
+#slide_1 >  .text-box {
+    background-color: #fff;
+    width: 90%;
+    height: 80%;
+    margin: 40px 30px;
+    position: absolute;
+    font-size: 22px;
+    padding: 20px;
+    max-height: 70%;
+    max-width: 83%;
+}
+
+#slide_1 >  .text-box > ul{
+    padding: 20px;
+}
+
+#slide_1 >  .text-box > ul >li{
+    padding-bottom: 20px;
+    display: none;
+}
+
+.next-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.header {
+    background-image: url('../resources/Graphics/Interface/LMSTest_TextBox.png');
+    width: 100%;
+    height: 140px;
+    background-repeat: round;
+}
+
+.header > .title {
+    background-color: #fff;
+    padding: 20px;
+    margin: 40px;
+    position: absolute;
+    font-size: 22px;
+    width: 80%;
+    text-align: center;
+}
+
+.content {
+    position: absolute;
+    top: 250px;
+    left: 40px;
+}
+
+.draggable-zone {
+    width: 340px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+    top: 20px;
+    right: 35px;
+}
+
+.draggable-zone.active {
+    background-color: rgba(0, 204, 42, 0.34);
+}
+
+.dragged-cake {
+    width: 150px;
+    position: absolute;
+    top: -100px;
+    right: 130px;
+}
+
+.dialog {
+    background-repeat: round;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+.dialog-content {
+    position: absolute;
+    top: 70px;
+    left: 7%;
+    width: 85%;
+}
+
+.dialog-content >.message {
+    font-size: 20px;
+}
+
+.dialog-content > .button {
+    margin-top: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.img-butn {
+    cursor: pointer;
+}
+
+.radio-image > input{
+    visibility: hidden;
+    position: absolute;
+}
+
+.radio-image > input:checked + img{
+    border:2px solid #f00;
+}
+
+.select-image > input{
+    visibility: hidden;
+    position: absolute;
+}
+
+.select-image > input:checked + img{
+    border:2px solid #f00;
+}

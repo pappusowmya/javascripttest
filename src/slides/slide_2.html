@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Designing Digitally</title>
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+<body onload="renderSlide2()">
+<div class="main">
+    <div class="menu">
+        <img class="menu-item" src="../resources/Graphics/Interface/LMSTest_Menu_Intro.png">
+        <img class="menu-item active" src="../resources/Graphics/Interface/LMSTest_Menu_Cake.png">
+        <img class="menu-item" src="../resources/Graphics/Interface/LMSTest_Menu_Cute.png">
+        <img class="menu-item" src="../resources/Graphics/Interface/LMSTest_Menu_RoadTrip.png">
+        <img class="menu-item" src="../resources/Graphics/Interface/LMSTest_Menu_Congrats.png">
+    </div>
+    <div class="slide-content">
+        <div id="slide_2">
+            <div class="header">
+                <div class="title">
+                    Pick up the cake, and drag it to the platter.
+                </div>
+            </div>
+
+            <div class="content">
+                <img id="cake" src="../resources/Graphics/Slide%20Contents/Cake.png" draggable="true"
+                     ondragend="checkDragSuccess(event)"
+                     ondragstart="dragCake(event)" width="160px">
+                <img src="../resources/Graphics/Slide%20Contents/Platform.png">
+
+                <div class="draggable-zone" ondrop="dropOnPlatform(event)"
+                     ondragover="allowDrop(event)" ondragenter="showDropZone(event)"
+                     ondragleave="hideDropZone(event)"></div>
+            </div>
+
+        </div>
+    </div>
+    <div id="correctAns" style="display: none" class="dialog">
+        <img src="../resources/Graphics/Interface/LMSTest_CorrectBox.png">
+
+        <div class="dialog-content">
+            <div class="message">
+                Delicious, You earned 25 points!
+            </div>
+            <div class="button">
+                <img src="../resources/Graphics/Interface/LMSTest_Continue_up.png"
+                     onmouseover="this.src='../resources/Graphics/Interface/LMSTest_Continue_over.png'"
+                     onmouseout="this.src='../resources/Graphics/Interface/LMSTest_Continue_up.png'"
+                     onclick="document.location='slide_3.html'">
+
+            </div>
+        </div>
+    </div>
+    <div id="wrongAns" style="display:none" class="dialog">
+        <img src="../resources/Graphics/Interface/LMSTest_IncorrectBox.png">
+
+        <div class="dialog-content">
+            <div class="message">
+                Put the cake on platter!
+            </div>
+            <div class="button">
+                <img src="../resources/Graphics/Interface/LMSTest_Continue_up.png"
+                     onmouseover="this.src='../resources/Graphics/Interface/LMSTest_Continue_over.png'"
+                     onmouseout="this.src='../resources/Graphics/Interface/LMSTest_Continue_up.png'"
+                     onclick="document.location='slide_3.html'">
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

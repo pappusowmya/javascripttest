@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Designing Digitally</title>
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+<body onload="renderSlide1()">
+<div class="main">
+    <div class="menu">
+        <img class="menu-item active" src="../resources/Graphics/Interface/LMSTest_Menu_Intro.png">
+        <img class="menu-item" src="../resources/Graphics/Interface/LMSTest_Menu_Cake.png">
+        <img class="menu-item" src="../resources/Graphics/Interface/LMSTest_Menu_Cute.png">
+        <img class="menu-item" src="../resources/Graphics/Interface/LMSTest_Menu_RoadTrip.png">
+        <img class="menu-item" src="../resources/Graphics/Interface/LMSTest_Menu_Congrats.png">
+    </div>
+    <div class="slide-content">
+        <div id="slide_1">
+            <div class="text-box">
+                <span id="welcome-text">Welcome to the Designing Digitally, Inc. LMS platform test. The purpose of this test is to:</span>
+                <ul>
+                    <li id="li-1"></li>
+                    <li id="li-2"></li>
+                    <li id="li-3"></li>
+                </ul>
+            </div>
+            <div>
+                <img class="next-btn" src="../resources/Graphics/Interface/LMSTest_Forward_up.png"
+                     onmouseover="this.src='../resources/Graphics/Interface/LMSTest_Forward_down.png'"
+                     onmouseout ="this.src='../resources/Graphics/Interface/LMSTest_Forward_up.png'"
+                     onclick="document.location='slide_2.html'">
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>
